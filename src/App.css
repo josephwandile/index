@@ -2,8 +2,20 @@ body {
   background-color: #f6f6f4;
 }
 
-.cover-image {
+.cover-photo {
   box-shadow: 0 2px 5px 1px darkgrey;
+  min-height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px) {
+    .cover-photo {
+      min-height: 400px;
+    }
 }
 
 .icons .icon {
@@ -12,4 +24,9 @@ body {
 
 .icons .icon:hover {
   color: #BF0086 !important;
+}
+
+.profile {
+  border-radius: 100% !important;
+  padding: 10px !important;
 }
